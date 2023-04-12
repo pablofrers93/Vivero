@@ -1,0 +1,6 @@
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Entidades\bin\Debug\Vivero2023.Entidades.dll
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Entidades\bin\Debug\Vivero2023.Entidades.pdb
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Entidades\obj\Debug\Vivero2023.Entidades.csproj.AssemblyReference.cache
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Entidades\obj\Debug\Vivero2023.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Entidades\obj\Debug\Vivero2023.Entidades.dll
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Entidades\obj\Debug\Vivero2023.Entidades.pdb

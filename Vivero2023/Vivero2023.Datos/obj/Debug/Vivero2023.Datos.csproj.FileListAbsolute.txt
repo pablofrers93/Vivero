@@ -1,0 +1,16 @@
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\bin\Debug\Vivero2023.Datos.dll
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\bin\Debug\Vivero2023.Datos.pdb
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\bin\Debug\EntityFramework.dll
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\bin\Debug\EntityFramework.xml
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\obj\Debug\Vivero2023.Datos.csproj.AssemblyReference.cache
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\obj\Debug\Vivero2023.Datos.csproj.CoreCompileInputs.cache
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\obj\Debug\Vivero2023.Datos.csproj.CopyComplete
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\obj\Debug\Vivero2023.Datos.dll
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\obj\Debug\Vivero2023.Datos.pdb
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\bin\Debug\Vivero2023.Entidades.dll
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\bin\Debug\Vivero2023.Entidades.pdb
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\obj\Debug\Vivero2023.Datos.Migrations.InitialCatalog.resources
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\obj\Debug\Vivero2023.Datos.csproj.GenerateResource.cache
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\obj\Debug\Vivero2023.Datos.Migrations.CreateTiposDeEnvaseTable.resources

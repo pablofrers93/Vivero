@@ -1,0 +1,17 @@
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Consola\bin\Debug\Vivero2023.Consola.exe.config
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Consola\bin\Debug\Vivero2023.Consola.exe
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Consola\bin\Debug\Vivero2023.Consola.pdb
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Consola\bin\Debug\EntityFramework.dll
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Consola\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Consola\bin\Debug\Vivero2023.Datos.dll
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Consola\bin\Debug\Vivero2023.Datos.pdb
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Consola\bin\Debug\EntityFramework.xml
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Consola\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Consola\obj\Debug\Vivero2023.Consola.csproj.AssemblyReference.cache
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Consola\obj\Debug\Vivero2023.Consola.csproj.SuggestedBindingRedirects.cache
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Consola\obj\Debug\Vivero2023.Consola.csproj.CoreCompileInputs.cache
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Consola\obj\Debug\Vivero2023.Consola.csproj.CopyComplete
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Consola\obj\Debug\Vivero2023.Consola.exe
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Consola\obj\Debug\Vivero2023.Consola.pdb
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Consola\bin\Debug\Vivero2023.Entidades.dll
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Consola\bin\Debug\Vivero2023.Entidades.pdb
