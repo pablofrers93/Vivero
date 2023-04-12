@@ -13,6 +13,8 @@ namespace Vivero2023.Entidades
 
         public decimal Precio { get; set; }
 
+        public int TipoDeEnvaseId { get; set; }
+        public virtual TipoDeEnvase  TipoDeEnvase { get; set; }
         public virtual TipoDePlanta TipoDePlanta { get; set; }
     }
 }

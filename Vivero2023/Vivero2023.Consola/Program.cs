@@ -13,10 +13,46 @@ namespace Vivero2023.Consola
         static void Main(string[] args)
         {
             //GetAllPlants();
-            GetAllPlantsWithType();
+            //GetAllPlantsWithType();
+            DeleteBorrameTipoDeEnvase();
           
+
             Console.ReadLine();
 
+        }
+
+        private static void DeleteBorrameTipoDeEnvase()
+        {
+            using (var context = new ViveroDbContext())
+            {
+                var tipoDeEnvaseInDb = context.TiposDeEnvases
+                    .SingleOrDefault(t => t.Descripcion.Contains("Borrame"));
+                if (tipoDeEnvaseInDb == null )
+                {
+                    Console.WriteLine("Tipo de envase inexistente");
+                    return;
+                }
+                var listaPlantas = context.Plantas.Where(p => p.TipoDeEnvaseId == tipoDeEnvaseInDb.TipoDeEnvaseId).ToList();
+
+                foreach (var item in listaPlantas) 
+                {
+                    Console.WriteLine(item.Descripcion);
+                }
+                Console.Write("confirma? s/n");
+                var respuesta = Console.ReadLine();
+                if (respuesta.ToUpper()=="N")
+                {
+                    Console.WriteLine("Baja cancelada por el usuario");
+                    return;
+                }
+                else
+                {
+                    context.TiposDeEnvases.Remove(tipoDeEnvaseInDb);
+                    context.SaveChanges();
+                    Console.WriteLine("Baja efectuada");
+                }
+            }
+            Console.ReadLine(); 
         }
 
         private static void GetAllPlantsWithType()

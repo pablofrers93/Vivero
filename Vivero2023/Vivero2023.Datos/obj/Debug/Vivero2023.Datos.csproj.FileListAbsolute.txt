@@ -14,3 +14,4 @@ C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2
 C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\obj\Debug\Vivero2023.Datos.Migrations.InitialCatalog.resources
 C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\obj\Debug\Vivero2023.Datos.csproj.GenerateResource.cache
 C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\obj\Debug\Vivero2023.Datos.Migrations.CreateTiposDeEnvaseTable.resources
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\obj\Debug\Vivero2023.Datos.Migrations.CreateRelationshipBetweenTiposDeEnvasesAndPlantasTables.resources

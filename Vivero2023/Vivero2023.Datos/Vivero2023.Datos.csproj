@@ -64,6 +64,10 @@
     <Compile Include="Migrations\202304121425463_CreateTiposDeEnvaseTable.designer.cs">
       <DependentUpon>202304121425463_CreateTiposDeEnvaseTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202304121731408_CreateRelationshipBetweenTiposDeEnvasesAndPlantasTables.cs" />
+    <Compile Include="Migrations\202304121731408_CreateRelationshipBetweenTiposDeEnvasesAndPlantasTables.designer.cs">
+      <DependentUpon>202304121731408_CreateRelationshipBetweenTiposDeEnvasesAndPlantasTables.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViveroDbContext.cs" />
@@ -80,6 +84,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202304121425463_CreateTiposDeEnvaseTable.resx">
       <DependentUpon>202304121425463_CreateTiposDeEnvaseTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304121731408_CreateRelationshipBetweenTiposDeEnvasesAndPlantasTables.resx">
+      <DependentUpon>202304121731408_CreateRelationshipBetweenTiposDeEnvasesAndPlantasTables.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

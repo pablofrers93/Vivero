@@ -1,6 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 using Vivero2023.Datos.EntityTypeConfiguration;
 using Vivero2023.Entidades;
@@ -23,6 +24,7 @@ namespace Vivero2023.Datos
             modelBuilder.Configurations.Add(new TipoDePlantaEntityTypeConfiguration());
             modelBuilder.Configurations.Add(new PlantaEntityTypeConfiguration());
             modelBuilder.Configurations.Add(new TipoDeEnvaseEntityTypeConfiguration());
+            modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();    
         }
     }
 }

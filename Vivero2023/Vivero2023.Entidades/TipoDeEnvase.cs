@@ -10,5 +10,6 @@ namespace Vivero2023.Entidades
     {
         public int TipoDeEnvaseId { get; set; }
         public string Descripcion { get; set; }
+        public virtual ICollection<Planta> Plantas { get; set; }    
     }
 }
