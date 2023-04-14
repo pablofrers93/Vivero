@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Vivero2023.Datos;
 using System.Data.Entity;
+using System.Data.Entity.Core.Metadata.Edm;
 
 namespace Vivero2023.Consola
 {
@@ -14,8 +15,8 @@ namespace Vivero2023.Consola
         {
             //GetAllPlants();
             //GetAllPlantsWithType();
-            //DeleteBorrameTipoDeEnvase();
-            BorrarElBorrame();
+            DeleteBorrameTipoDeEnvase();
+            //BorrarElBorrame();
           
 
             Console.ReadLine();
@@ -26,74 +27,87 @@ namespace Vivero2023.Consola
         {
             using (var context = new ViveroDbContext())
             {
-                var tipoDeEnvaseInDb = context.TiposDeEnvases
+                var tipoEnvaseInDb = context.TiposDeEnvases
                     .SingleOrDefault(t => t.Descripcion.Contains("Borrame"));
-                if (tipoDeEnvaseInDb == null)
+                if (tipoEnvaseInDb == null)
                 {
                     Console.WriteLine("Tipo de envase inexistente");
                     return;
                 }
-                if (context.Plantas.Any(p => p.TipoDeEnvaseId == tipoDeEnvaseInDb.TipoDeEnvaseId))
-                {
-                    var listaPlantas = context.Plantas
-                        .Where(p => p.TipoDeEnvaseId == tipoDeEnvaseInDb.TipoDeEnvaseId)
-                        .ToList();
-
-
-                    foreach (var item in listaPlantas)
-                    {
-                        Console.Write($"confirma la baja de {item.Descripcion} s/n");
-                        var resp = Console.ReadLine();
-                        if (resp.ToUpper()=="S")
-                        {
-                            context.Plantas.Remove(item);   
-                        }
-                    }
-                    context.TiposDeEnvases.Remove(tipoDeEnvaseInDb);
-                    context.SaveChanges();
-                    Console.WriteLine("Baja efectuada");
-                }
                 else
                 {
-                    context.TiposDeEnvases.Remove(tipoDeEnvaseInDb);
-                    context.SaveChanges();
-                    Console.WriteLine("Baja efectuada");
+                    if (context.Plantas.Any(p => p.TipoDeEnvaseId == tipoEnvaseInDb.TipoDeEnvaseId))
+                    {
+                        var listaPlantas = context.Plantas
+                            .Where(p=>p.TipoDeEnvaseId==tipoEnvaseInDb.TipoDeEnvaseId)
+                            .ToList();
+                        foreach (var item in listaPlantas)
+                        {
+                            Console.WriteLine($"Confirma la baja de {item.Descripcion}?");
+                            var resp = Console.ReadLine();
+                            if (resp.ToUpper()=="S")
+                            {
+                                context.Plantas.Remove(item);
+                            }
+                        }
+                        context.TiposDeEnvases.Remove(tipoEnvaseInDb);
+                        context.SaveChanges();
+                        Console.WriteLine("Baja efectuada con éxito");
+                    }
+                    else
+                    {
+                        context.TiposDeEnvases.Remove(tipoEnvaseInDb);
+                        context.SaveChanges();
+                        Console.WriteLine("Baja efectuada");
+                    }
+
                 }
             }
+            Console.ReadLine();
         }
 
         private static void DeleteBorrameTipoDeEnvase()
         {
-            using (var context = new ViveroDbContext())
+            try
             {
-                var tipoDeEnvaseInDb = context.TiposDeEnvases
-                    .SingleOrDefault(t => t.Descripcion.Contains("Borrame"));
-                if (tipoDeEnvaseInDb == null )
+                using (var context = new ViveroDbContext())
                 {
-                    Console.WriteLine("Tipo de envase inexistente");
-                    return;
-                }
-                var listaPlantas = context.Plantas.Where(p => p.TipoDeEnvaseId == tipoDeEnvaseInDb.TipoDeEnvaseId).ToList();
+                    var tipoDeEnvaseInDb = context.TiposDeEnvases
+                        .SingleOrDefault(t => t.Descripcion.Contains("Bolsa"));
+                    if (tipoDeEnvaseInDb == null)
+                    {
+                        Console.WriteLine("Tipo de envase inexistente");
+                        return;
+                    }
+                    else
+                    {
+                        if (context.Plantas.Any(p => p.TipoDeEnvaseId == tipoDeEnvaseInDb.TipoDeEnvaseId))
+                        {
+                            Console.WriteLine("Plantas con ese tipo de envase, baja denegada...");
+                        }
+                        else
+                        {
+                            context.TiposDeEnvases.Remove(tipoDeEnvaseInDb);
+                            context.SaveChanges();
+                            Console.WriteLine("Baja efectuada");
+                        }
 
-                foreach (var item in listaPlantas) 
-                {
-                    Console.WriteLine(item.Descripcion);
+                    }
                 }
-                Console.Write("confirma? s/n");
-                var respuesta = Console.ReadLine();
-                if (respuesta.ToUpper()=="N")
+            }
+            catch (Exception ex)
+            {
+
+                if (ex.Message.Contains("REFERENCE"))
                 {
-                    Console.WriteLine("Baja cancelada por el usuario");
-                    return;
+                    Console.WriteLine("Registros relacionados, baja denegada...");
                 }
                 else
                 {
-                    context.TiposDeEnvases.Remove(tipoDeEnvaseInDb);
-                    context.SaveChanges();
-                    Console.WriteLine("Baja efectuada");
+                    Console.WriteLine("Otro error");
                 }
             }
-            Console.ReadLine(); 
+            Console.ReadLine();
         }
 
         private static void GetAllPlantsWithType()

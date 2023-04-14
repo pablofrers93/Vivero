@@ -15,3 +15,4 @@ C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2
 C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Consola\obj\Debug\Vivero2023.Consola.pdb
 C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Consola\bin\Debug\Vivero2023.Entidades.dll
 C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Consola\bin\Debug\Vivero2023.Entidades.pdb
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Consola\bin\Debug\Vivero2023.Datos.dll.config
