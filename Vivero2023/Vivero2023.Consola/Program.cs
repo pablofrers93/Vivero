@@ -14,11 +14,52 @@ namespace Vivero2023.Consola
         {
             //GetAllPlants();
             //GetAllPlantsWithType();
-            DeleteBorrameTipoDeEnvase();
+            //DeleteBorrameTipoDeEnvase();
+            BorrarElBorrame();
           
 
             Console.ReadLine();
 
+        }
+
+        private static void BorrarElBorrame()
+        {
+            using (var context = new ViveroDbContext())
+            {
+                var tipoDeEnvaseInDb = context.TiposDeEnvases
+                    .SingleOrDefault(t => t.Descripcion.Contains("Borrame"));
+                if (tipoDeEnvaseInDb == null)
+                {
+                    Console.WriteLine("Tipo de envase inexistente");
+                    return;
+                }
+                if (context.Plantas.Any(p => p.TipoDeEnvaseId == tipoDeEnvaseInDb.TipoDeEnvaseId))
+                {
+                    var listaPlantas = context.Plantas
+                        .Where(p => p.TipoDeEnvaseId == tipoDeEnvaseInDb.TipoDeEnvaseId)
+                        .ToList();
+
+
+                    foreach (var item in listaPlantas)
+                    {
+                        Console.Write($"confirma la baja de {item.Descripcion} s/n");
+                        var resp = Console.ReadLine();
+                        if (resp.ToUpper()=="S")
+                        {
+                            context.Plantas.Remove(item);   
+                        }
+                    }
+                    context.TiposDeEnvases.Remove(tipoDeEnvaseInDb);
+                    context.SaveChanges();
+                    Console.WriteLine("Baja efectuada");
+                }
+                else
+                {
+                    context.TiposDeEnvases.Remove(tipoDeEnvaseInDb);
+                    context.SaveChanges();
+                    Console.WriteLine("Baja efectuada");
+                }
+            }
         }
 
         private static void DeleteBorrameTipoDeEnvase()
