@@ -15,12 +15,51 @@ namespace Vivero2023.Consola
         {
             //GetAllPlants();
             //GetAllPlantsWithType();
-            DeleteBorrameTipoDeEnvase();
+            //DeleteBorrameTipoDeEnvase();
             //BorrarElBorrame();
-          
+            AsignarEnvasesALasPlantas();
 
             Console.ReadLine();
 
+        }
+
+        private static void AsignarEnvasesALasPlantas()
+        {
+            var cambiosEfectuados = 0;
+            using (var context = new ViveroDbContext())
+            {
+                var lista = new List<(string planta, string envase)>()
+                {
+                    ("Helecho", "Maseta Chica"),
+                    ("Cactus", "Maseta Mediana"),
+                    ("Arbol", "Maseta Grande"),
+                    ("Palmera", "Maseta Grande")
+                };
+                
+                foreach (var item in lista)
+                {
+                    var listaPlantas = context.Plantas
+                        .Where(p=>p.Descripcion.Contains(item.planta)).ToList();
+                    
+                    if (listaPlantas.Count()>0)
+                    {
+                        var tipoDeEnvaseInDb = context.TiposDeEnvases
+                            .SingleOrDefault(t => t.Descripcion == item.envase);
+
+                        if (tipoDeEnvaseInDb!=null)
+                        {
+                            foreach (var planta in listaPlantas)
+                            {
+                                planta.TipoDeEnvaseId = tipoDeEnvaseInDb.TipoDeEnvaseId;
+                                cambiosEfectuados++;
+                            }
+                        }
+                    }
+                }
+                context.SaveChanges();
+                Console.WriteLine($" {cambiosEfectuados} cambios realizados");
+            }
+            Console.ReadLine();
         }
 
         private static void BorrarElBorrame()
