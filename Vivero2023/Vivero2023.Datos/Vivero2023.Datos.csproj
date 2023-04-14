@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOs\Planta\PlantaListDto.cs" />
     <Compile Include="EntityTypeConfiguration\PlantaEntityTypeConfiguration.cs" />
     <Compile Include="EntityTypeConfiguration\TipoDeEnvaseEntityTypeConfiguration.cs" />
     <Compile Include="EntityTypeConfiguration\TipoDePlantaEntityTypeConfiguration.cs" />
@@ -72,6 +73,14 @@
     <Compile Include="Migrations\202304141746154_RemoveOneToManyCascadeConvention.cs" />
     <Compile Include="Migrations\202304141746154_RemoveOneToManyCascadeConvention.designer.cs">
       <DependentUpon>202304141746154_RemoveOneToManyCascadeConvention.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304142026058_AddNewFieldInPlantasTable.cs" />
+    <Compile Include="Migrations\202304142026058_AddNewFieldInPlantasTable.designer.cs">
+      <DependentUpon>202304142026058_AddNewFieldInPlantasTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304142031368_ChangePrecioFieldNameInPlantasTable.cs" />
+    <Compile Include="Migrations\202304142031368_ChangePrecioFieldNameInPlantasTable.designer.cs">
+      <DependentUpon>202304142031368_ChangePrecioFieldNameInPlantasTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -95,6 +104,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202304141746154_RemoveOneToManyCascadeConvention.resx">
       <DependentUpon>202304141746154_RemoveOneToManyCascadeConvention.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304142026058_AddNewFieldInPlantasTable.resx">
+      <DependentUpon>202304142026058_AddNewFieldInPlantasTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304142031368_ChangePrecioFieldNameInPlantasTable.resx">
+      <DependentUpon>202304142031368_ChangePrecioFieldNameInPlantasTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

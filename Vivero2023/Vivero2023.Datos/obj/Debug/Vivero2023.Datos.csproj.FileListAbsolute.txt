@@ -17,3 +17,5 @@ C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2
 C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\obj\Debug\Vivero2023.Datos.Migrations.CreateRelationshipBetweenTiposDeEnvasesAndPlantasTables.resources
 C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\bin\Debug\Vivero2023.Datos.dll.config
 C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\obj\Debug\Vivero2023.Datos.Migrations.RemoveOneToManyCascadeConvention.resources
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\obj\Debug\Vivero2023.Datos.Migrations.AddNewFieldInPlantasTable.resources
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion\Vivero\Vivero2023\Vivero2023.Datos\obj\Debug\Vivero2023.Datos.Migrations.ChangePrecioFieldNameInPlantasTable.resources
